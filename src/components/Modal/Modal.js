@@ -1,18 +1,11 @@
-import { useState } from "react";
-// import Card from "../Card/Card";
 import styles from "./Modal.module.css";
 import containerStyles from "../User/User.module.css";
 import Button from "../Button/Button";
 
-const Modal = () => {
-  const [modal, setModal] = useState(false);
-
-  const modalHandler = (e) => {
-    e.preventDefault();
-    window.alert("No more planets to add!");
-    setModal(true);
+const Modal = ({ closeModal }) => {
+  const modalHandler = () => {
+    closeModal(false);
   };
-  console.log(modal);
 
   return (
     <div>
