@@ -1,0 +1,16 @@
+.userContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.renderedUser {
+  border: 1px solid rgb(170, 167, 167);
+  width: 95%;
+  height: 40px;
+  padding-left: 5px;
+  line-height: 5px;
+  margin: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
