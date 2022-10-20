@@ -14,7 +14,7 @@ const RenderedUser = (props) => {
         ) : (
           users.map((e) => {
             return (
-              <div className={styles.renderedUser}>
+              <div key={e.name} className={styles.renderedUser}>
                 <p>
                   <span>{e.name}</span>
                   <span> ( {e.age} years old)</span>
